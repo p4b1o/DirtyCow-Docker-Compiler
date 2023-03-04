@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  my-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /home/pablo/docker/app:/app
+      - /home/pablo/docker/app:/compiled
+    command: sh -c "gcc -m32 -pthread -lcrypt -o /compiled/dirty /app/dirty.c && cp /compiled/dirty /app && tail -f /dev/null"
+
