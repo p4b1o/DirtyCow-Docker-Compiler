@@ -1,4 +1,4 @@
-# DirtyCow-Docker-Compiler
+# DirtyCow Docker 32bit Compiler (can be used for any other exploit)
 Using Docker for compiling DirtyCow or any other exploit for a specific version of Linux, especially 32-bit, can be a useful approach.
 
 ## Example for Debian 9 Strech 32 bit
